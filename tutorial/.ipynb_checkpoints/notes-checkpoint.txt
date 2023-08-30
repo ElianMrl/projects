@@ -1,0 +1,2 @@
+jupyter lab --version         3.0.14  
+jupyter notebook --version    6.4.8
