@@ -1,0 +1,100 @@
+<workflow-app xmlns="uri:oozie:workflow:0.2" name="streaming-wf">
+  <start to="QUESTION1" />
+  <action name="QUESTION1">
+    <map-reduce>
+      <job-tracker>${jobTracker}</job-tracker>
+      <name-node>${nameNode}</name-node>
+      <streaming>
+        <mapper>mapper.py</mapper>
+        <reducer>reducer.py</reducer>
+      </streaming>
+      <configuration>
+        <property>
+          <name>mapred.job.queue.name</name>
+          <value>${queueName}</value>
+        </property>
+
+        <property>
+          <name>mapred.input.dir</name>
+          <value>${inputDir}/*</value>
+        </property>
+        <property>
+          <name>mapred.output.dir</name>
+          <value>${outputDir}/project/Q1</value>
+        </property>
+      </configuration>
+      <file>lib/Q1/mapper.py</file>
+      <file>lib/Q1/reducer.py</file>
+    </map-reduce>
+    <ok to="QUESTION2" />
+    <error to="fail" />
+  </action>
+
+  <action name="QUESTION2">
+    <map-reduce>
+      <job-tracker>${jobTracker}</job-tracker>
+      <name-node>${nameNode}</name-node>
+      <streaming>
+        <mapper>mapper.py</mapper>
+        <reducer>reducer.py</reducer>
+      </streaming>
+      <configuration>
+        <property>
+          <name>mapred.job.queue.name</name>
+          <value>${queueName}</value>
+        </property>
+
+        <property>
+          <name>mapred.input.dir</name>
+          <value>${inputDir}/*</value>
+        </property>
+        <property>
+          <name>mapred.output.dir</name>
+          <value>${outputDir}/project/Q2</value>
+        </property>
+      </configuration>
+      <file>lib/Q2/mapper.py</file>
+      <file>lib/Q2/reducer.py</file>
+    </map-reduce>
+    <ok to="QUESTION3" />
+    <error to="fail" />
+  </action>
+
+  <action name="QUESTION3">
+    <map-reduce>
+      <job-tracker>${jobTracker}</job-tracker>
+      <name-node>${nameNode}</name-node>
+      <streaming>
+        <mapper>mapper.py</mapper>
+        <reducer>reducer.py</reducer>
+      </streaming>
+      <configuration>
+        <property>
+          <name>mapred.job.queue.name</name>
+          <value>${queueName}</value>
+        </property>
+
+        <property>
+          <name>mapred.input.dir</name>
+          <value>${inputDir}/*</value>
+        </property>
+        <property>
+          <name>mapred.output.dir</name>
+          <value>${outputDir}/project/Q3</value>
+        </property>
+      </configuration>
+      <file>lib/Q3/mapper.py</file>
+      <file>lib/Q3/reducer.py</file>
+    </map-reduce>
+    <ok to="end" />
+    <error to="fail" />
+  </action>
+
+  <kill name="fail">
+    <message
+      >Map/Reduce failed, error
+      message[${wf:errorMessage(wf:lastErrorNode())}]</message
+    >
+  </kill>
+  <end name="end" />
+</workflow-app>
