@@ -1,0 +1,1 @@
+I made a gitignore file so that everytime I do "git add ." it ignores the direcotry ThinkStats2-master. Therefore, If I want to used the content of this directory I have to locally isntall this directory in my local machine from https://github.com/AllenDowney/ThinkStats2
