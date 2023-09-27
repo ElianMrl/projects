@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --color-primary: #1e2a42; /* Dark Blue for main text */
+  --color-secondary: #1e2a42; /* Dark Sky Blue for sidebar */
+  --color-accent: #ffcc00; /* Lime Green for links hover and section separators */
+  --hover-color: #e6cf78;
+  --heading-color: #91873f; /*this is for headings*/
+
+  /* Spacing */
+  --base-spacing: 1.5rem;
+  /* Main spacing for elements */
+  --section-spacing: 2.5rem;
+  /* Space between sections */
+  --sidebar-spacing: 1.5rem;
+  /* Padding around sidebar content */
+
+  /* Fonts */
+  --font-primary: "GFS Didot", sans-serif;
+  /* Main font */
+  --font-secondary: "Carlito", sans-serif;
+  /* Secondary font (not used in this CSS) */
+  --base-font-size: 1rem;
+  /* Base font size for body text */
+  --h1-font-size: 2rem;
+  /* Font size for main headings */
+  --h2-font-size: 1.75rem;
+  /* Font size for sub-headings */
+  --h3-font-size: 1.5rem;
+  /* Font size for sub-sub-headings */
+  --h4-font-size: 1.25rem;
+  /* Font size for the smallest headings */
+
+  /* Other */
+  --base-line-height: 1.5;
+  /* Base line height for text */
+  --section-separator: 2.5px solid var(--color-accent);
+  /* Line to separate sections */
+  --icon-font-size: 2rem;
+  /* Size of the font icons */
+  --transition-speed: 0.3s;
+  /* Transition speed for link hover effects */
+
+  /* Link hover color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

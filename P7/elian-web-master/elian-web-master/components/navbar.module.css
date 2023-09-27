@@ -1,0 +1,82 @@
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: yellow;
+}
+
+.navLiabutton {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+  color: red;
+}
+
+.btn_box a {
+  padding: 9px 25px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 19px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn_box a:hover {
+  color: #00abf0;
+}
+
+.btn_box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn_box a:hover::before {
+  width: 100%;
+}
+
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes manipActiveHover {
+  100% {
+    pointer-events: auto;
+  }
+}

@@ -1,0 +1,189 @@
+.footer {
+  background-color: lightskyblue;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: red;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socialIcons a:hover {
+  background-color: blue;
+  transition: 0.3s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.3s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footerNav ul li a {
+  color: red;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/*
+.footer {
+  background-color: wheat;
+  padding: 70px 0;
+}
+
+.container {
+  max-width: 1170px;
+  background-color: beige;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.footer_col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer_col h4 {
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+*/
+
+/*this adds the line under the H4 or titles of the footer content*/
+/*
+.footer_col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: red;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer_col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer_col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: orangered;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer_col ul li a:hover {
+  color: green;
+  padding-left: 10px;
+}
+
+.footer_col .social_links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.footer_col .social_links a:hover {
+  background-color: aqua;
+}
+
+@media (max-width: 767px) {
+  .footer_col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer_col {
+    width: 100%;
+  }
+}
+
+*/
