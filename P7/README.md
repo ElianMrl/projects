@@ -1,8 +1,6 @@
 ### Context - Pregnancies Dataset
 
-The Child Health and Development Studies investigate a range of topics. One study, in
-particular, considered all pregnancies between 1960 and 1967 among women in the Kaiser
-Foundation Health Plan in the San Francisco East Bay area.
+The Child Health and Development Studies investigate a range of topics. One study, in particular, considered all pregnancies between 1960 and 1967 among women in the Kaiser Foundation Health Plan in the San Francisco East Bay area.
 
 [Pregnancies Dataset Link](https://www.kaggle.com/datasets/debjeetdas/babies-birth-weight)
 
@@ -21,14 +19,7 @@ Content Attribute Information:
 
 ### Context - Alzheimer Disease Dataset
 
-The Alzheimer's Disease and Healthy Aging Data in the US dataset is a comprehensive
-collection of data on the health and well-being of older Americans. The dataset includes
-information on a wide range of variables, such as demographic characteristics, health conditions,
-healthcare utilization, and health behaviors.
-The primary focus of the dataset is on Alzheimer's disease and related dementias, including
-prevalence, incidence, risk factors, and outcomes. The data can be used to identify trends and
-patterns in the prevalence and incidence of these conditions, as well as to explore potential risk
-factors and interventions that may help to prevent or mitigate their impact.
+The Alzheimer's Disease and Healthy Aging Data in the US dataset is a comprehensivecollection of data on the health and well-being of older Americans. The dataset includes information on a wide range of variables, such as demographic characteristics, health conditions, healthcare utilization, and health behaviors. The primary focus of the dataset is on Alzheimer's disease and related dementias, including prevalence, incidence, risk factors, and outcomes. The data can be used to identify trends and patterns in the prevalence and incidence of these conditions, as well as to explore potential risk factors and interventions that may help to prevent or mitigate their impact.
 
 [Alzheimer Disease Dataset Link](https://www.kaggle.com/datasets/ananthu19/alzheimer-disease-and-healthy-aging-data-in-us)
 
