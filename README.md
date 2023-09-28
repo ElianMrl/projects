@@ -75,6 +75,6 @@ While the dataset comprises 76 attributes, this analysis is confined to a critic
 I am always open to feedback, suggestions, and collaboration. Feel free to reach out to me at:
 
 - Email: elianpmrl@gmail.com
-- LinkedIn: [ElianMrl](www.linkedin.com/in/elianmrl)
+- LinkedIn: www.linkedin.com/in/elianmrl
 
 Thank you for visiting my portfolio, and happy exploring!
